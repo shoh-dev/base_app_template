@@ -1,4 +1,4 @@
-package com.worker.finder.app.worker_finder_app
+package com.shoh.dev.base_app_template
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,6 +1,6 @@
-# worker_finder_app
+# base_app_template
 
-A worker finder app for Fiverr client (Canda)
+Base app template by shoh.dev
 
 ## Getting Started
 

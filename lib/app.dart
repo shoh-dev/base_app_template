@@ -1,12 +1,12 @@
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
-import 'package:worker_finder_app/manager/redux/action/helper.dart';
-import 'package:worker_finder_app/manager/redux/middleware/counter.mw.dart';
-import 'package:worker_finder_app/manager/redux/state/state.dart';
-import 'package:worker_finder_app/manager/redux/store/store.dart';
-import 'package:worker_finder_app/ui/loader/loading.helper.dart';
-import 'package:worker_finder_app/utils/redux.helper.dart';
+import 'package:base_app_template/manager/redux/action/helper.dart';
+import 'package:base_app_template/manager/redux/middleware/counter.mw.dart';
+import 'package:base_app_template/manager/redux/state/state.dart';
+import 'package:base_app_template/manager/redux/store/store.dart';
+import 'package:base_app_template/ui/loader/loading.helper.dart';
+import 'package:base_app_template/utils/redux.helper.dart';
 
 class AppBase extends StatefulWidget {
   const AppBase({super.key});

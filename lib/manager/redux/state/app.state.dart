@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:equatable/equatable.dart';
-import 'package:worker_finder_app/manager/redux/state/state.dart';
+import 'package:base_app_template/manager/redux/state/state.dart';
 
 @immutable
 class AppState extends Equatable {

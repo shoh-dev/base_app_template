@@ -1,5 +1,5 @@
 import 'package:redux/redux.dart';
-import 'package:worker_finder_app/manager/redux/state/state.dart';
+import 'package:base_app_template/manager/redux/state/state.dart';
 
 AppState appReducer(AppState state, dynamic action) {
   var newState = state.copyWith(

@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
-import 'package:worker_finder_app/ui/loader/loading.widget.dart';
+import 'package:base_app_template/ui/loader/loading.widget.dart';
 
 CancelFunc showLoading({bool barrierDismissible = false}) {
   return BotToast.showCustomLoading(

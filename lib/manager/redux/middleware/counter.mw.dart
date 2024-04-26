@@ -1,8 +1,8 @@
 import 'package:redux/redux.dart';
-import 'package:worker_finder_app/manager/redux/action/action.dart';
-import 'package:worker_finder_app/manager/redux/state/state.dart';
-import 'package:worker_finder_app/manager/response_handler/handle_exception.dart';
-import 'package:worker_finder_app/manager/response_handler/result.dart';
+import 'package:base_app_template/manager/redux/action/action.dart';
+import 'package:base_app_template/manager/redux/state/state.dart';
+import 'package:base_app_template/manager/response_handler/handle_exception.dart';
+import 'package:base_app_template/manager/response_handler/result.dart';
 import 'package:either_dart/either.dart';
 
 class IncrementAction extends ReduxAction<int> {

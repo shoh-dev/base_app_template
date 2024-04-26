@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:either_dart/either.dart';
-import 'package:worker_finder_app/manager/response_handler/result.dart';
+import 'package:base_app_template/manager/response_handler/result.dart';
 
 Either<Failure, Success<T>> handleException<T>(dynamic e) {
   Either<Failure, Success<T>> switcher() {

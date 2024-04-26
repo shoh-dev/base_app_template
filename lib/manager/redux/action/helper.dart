@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:worker_finder_app/manager/redux/store/store.dart';
-import 'package:worker_finder_app/manager/response_handler/result.dart';
+import 'package:base_app_template/manager/redux/store/store.dart';
+import 'package:base_app_template/manager/response_handler/result.dart';
 
 import 'action.dart';
 

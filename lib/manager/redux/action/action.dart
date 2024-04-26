@@ -1,4 +1,4 @@
-import 'package:worker_finder_app/manager/response_handler/result.dart';
+import 'package:base_app_template/manager/response_handler/result.dart';
 
 import '../store/store.dart';
 
