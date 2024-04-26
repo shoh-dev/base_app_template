@@ -1,0 +1,7 @@
+extension StringHelpers on String {
+  String capitalize() {
+    return "${this[0].toUpperCase()}${substring(1)}";
+  }
+
+  String get hardcoded => this;
+}

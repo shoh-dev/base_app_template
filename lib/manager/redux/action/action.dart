@@ -1,6 +1,5 @@
+import 'package:base_app_template/manager/injection/setup.dart';
 import 'package:base_app_template/manager/response_handler/result.dart';
-
-import '../store/store.dart';
 
 abstract class ReduxAction<T> {
   const ReduxAction();
