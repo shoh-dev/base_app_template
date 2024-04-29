@@ -1,9 +1,10 @@
+import 'package:base_app_template/manager/redux/result/redux_state.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
 
 @immutable
 class CounterState extends Equatable {
-  final int counter;
+  final ReduxState<int> counter;
 
   const CounterState({
     required this.counter,
@@ -11,12 +12,12 @@ class CounterState extends Equatable {
 
   factory CounterState.initial() {
     return const CounterState(
-      counter: 0,
+      counter: ReduxInitialState(),
     );
   }
 
   CounterState copyWith({
-    int? counter,
+    ReduxState<int>? counter,
   }) {
     return CounterState(
       counter: counter ?? this.counter,
@@ -30,7 +31,7 @@ class CounterState extends Equatable {
 }
 
 class UpdateCounterStateAction {
-  final int? counter;
+  final ReduxState<int>? counter;
 
   UpdateCounterStateAction({
     this.counter,

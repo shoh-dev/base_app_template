@@ -6,10 +6,6 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 class SupaClient {
   late final Supabase supabase;
 
-  Future<List> getAllWorkers() async => await supabase.client
-      .from(SupabaseConstants.workers)
-      .select(SupabaseConstants.selectWorkerWithSkills);
-
   Future<void> initialize() async {
     final sb = await Supabase.initialize(
       url: kDebugMode
@@ -25,11 +21,12 @@ class SupaClient {
   }
 }
 
+//All table names and columns
 class SupabaseConstants {
   static const String workers = 'workers';
   static const String skills = 'skills';
   static const String workerSkills = 'worker_skills';
   static const String clients = 'clients';
 
-  static const String selectWorkerWithSkills = '*, skills(name)';
+  static const String selectWorkerWithSkills = '*, skills(*)';
 }

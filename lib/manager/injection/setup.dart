@@ -11,13 +11,14 @@ final appRouter = _getIt<AppRouter>();
 
 final appStore = _getIt<Store<AppState>>();
 
-final supaCLient = _getIt<SupaClient>();
+final supaClient = _getIt<SupaClient>();
 
 Future<void> setupInjection() async {
   _getIt.registerSingleton(reduxStore);
 
-  _getIt.registerSingletonAsync(() async => SupaClient()..initialize());
+  _getIt.registerSingleton(SupaClient());
+  await supaClient.initialize();
 
-  _getIt.registerSingletonAsync(
-      () async => AppRouter(_getIt.get())..initialize());
+  _getIt.registerSingleton(AppRouter(_getIt.get()));
+  await appRouter.initialize();
 }
